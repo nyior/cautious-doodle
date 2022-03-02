@@ -1,0 +1,43 @@
+$color-blue: #6231EC;
+
+.questionCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 100px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.content p {
+    color: $color-blue;
+    font-weight: bold;
+}
+
+.input {
+    margin: 0.5rem;
+}
+
+// .customRadioButton {
+//     position: relative;
+//     // // top: 0;
+//     // // left: 0;
+//     // height: 1rem;
+//     // width: 1rem;
+//     border: 0.5px solid $color-blue;
+//     border-radius: 50%;
+//     // color: $color-blue;
+//     // font-weight: bold;
+//     margin: 0.5rem;
+// }
+
