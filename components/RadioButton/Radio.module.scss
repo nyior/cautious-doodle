@@ -1,0 +1,43 @@
+$color-blue: #6231EC;
+
+.customRadio {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+  
+    & + label {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      line-height: 1rem;
+      margin: 0.5rem;
+      color: $color-blue;
+  
+      span {
+        margin-left: 2rem;
+      }
+  
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        color: #f5f5f5;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid $color-blue;
+        top: 0;
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  
+    &:checked {
+      & + label::before {
+        content: '✔';
+        background-color: $color-blue;
+        color: #ffffff;
+        border: solid 1px $color-blue;
+      }
+    }
+}

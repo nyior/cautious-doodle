@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 import { Question } from "../components/Question/question";
 
 
-const question = {
+const question: any = {
   "prompt": "Which of the below statements about electricity is not true?",
   
   "options": [
@@ -26,7 +26,7 @@ const question = {
 }
 
 
-export default Home => {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -40,3 +40,5 @@ export default Home => {
     </div>
   )
 }
+
+export default Home
