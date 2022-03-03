@@ -4,7 +4,7 @@ import { Choice } from "../Choice/choice"
 export const Question = props =>  {
   const answerChoices = props.options;
   const choicesComponents = answerChoices.map(
-    (choice) => <Choice key={choice.toString()} text={choice['text']} is_answer={choice['is_answer']}/>
+    (choice) => <Choice key={choice.toString()} text={choice['text']} isAnswer={choice['is_answer']}/>
   );
 
   return (
