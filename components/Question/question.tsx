@@ -1,16 +1,38 @@
+import { motion } from 'framer-motion'
+
 import styles from "./Question.module.scss"
 import { Choice } from "../Choice/choice"
 
 export const Question = props =>  {
-  const answerChoices = props.options;
-  const choicesComponents = answerChoices.map(
-    (choice) => <Choice key={choice.toString()} text={choice['text']} isAnswer={choice['is_answer']}/>
-  );
+  const answerChoices = props.options
+
+  var delay = 2
+  var choicesComponents: any[] = []
+
+  answerChoices.forEach(element => {
+    const choice = <Choice  text={element['text']} isAnswer={element['is_answer']} delay={delay}/>
+    choicesComponents.push(choice)
+
+    delay = delay+2
+  });
+
+  const variants = {
+    hidden: { opacity: 0, scale: 0 },
+    enter: { opacity: 1, scale: 1, 
+      transition: {delay: .8, ease: "easeOut", duration: 1}
+    },
+  }
 
   return (
 
     <div className={styles.card}>
-        <p>{props.question}</p>
+        <motion.p 
+          initial="hidden" 
+          animate="enter"
+          variants={variants}
+        >
+          {props.question}
+        </motion.p>
 
         <div>
           { choicesComponents }

@@ -1,5 +1,4 @@
 $color-blue: #6231EC;
-$color-grey: #eaeaea;
 
 .container {
     min-height: 100vh;
@@ -21,4 +20,6 @@ $color-grey: #eaeaea;
     border-radius: 30px;
     min-width: 400px;
     max-height: 250px;
+    overflow: hidden;
 }
+
