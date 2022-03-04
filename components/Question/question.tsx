@@ -10,7 +10,7 @@ export const Question = props =>  {
   var choicesComponents: any[] = []
 
   answerChoices.forEach(element => {
-    const choice = <Choice  text={element['text']} isAnswer={element['is_answer']} delay={delay}/>
+    const choice = <Choice key={element.toString()} text={element['text']} isAnswer={element['is_answer']} delay={delay}/>
     choicesComponents.push(choice)
 
     delay = delay+2
