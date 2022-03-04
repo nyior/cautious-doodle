@@ -1,8 +1,9 @@
-CSS Animation implemented in Next.js :)
- live-link: https://cautious-doodle.vercel.app/
+## Next.js + SCSS + Typescript
+Implemented the CSS Animation in this project with the [Motion Framer](https://www.framer.com/docs/animation/) plugin.
 
+### Run Project
+* Clone Repo `git clone repo-url`
+* Install Project Dependencies `npm install`
+* Fireup Local Server `npm run dev`
 
-TODO:
-    scss support: check out this link: https://www.techomoro.com/how-to-use-sass-or-scss-in-a-next-js-app/
-
-    typescript support
+ [live-link](https://cautious-doodle.vercel.app/)
