@@ -1,5 +1,5 @@
 ## Next.js + SCSS + Typescript
-Implemented a CSS Animation in this project with the [Motion Framer](https://www.framer.com/docs/animation/)
+Implemented the CSS Animation in this project with the [Motion Framer](https://www.framer.com/docs/animation/) plugin.
 
 ### Run Project
 * Clone Repo `git clone repo-url`
