@@ -7,7 +7,3 @@ Implemented the CSS Animation in this project with the [Motion Framer](https://w
 * Fireup Local Server `npm run dev`
 
  [live-link](https://cautious-doodle.vercel.app/)
- 
- 
- 
- This is the animations branch
